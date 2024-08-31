@@ -7,6 +7,10 @@ class parent{
         this.name = name;
     }
 
+    public parent(){
+
+    }
+
     public void setId(int id){
         this.id = id;
     }
@@ -32,8 +36,13 @@ public class encapsulation {
 
     public static void main(String[]args){
         parent obj = new parent(1, "Akash");
+        
+        parent obj2 = new parent();
 
-        System.out.println(obj);
+        obj2.setId(2);
+        obj2.setName("Aditya");
+
+        System.out.println(obj+"\n"+obj2.getId()+" "+obj2.getName());
     }
     
 }
